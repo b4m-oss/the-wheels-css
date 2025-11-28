@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>{% block title %}the-wheels-css{% endblock %}</title>
+  <link rel="stylesheet" href="/src/css/index.css">
+  {% block head %}{% endblock %}
+</head>
+<body>
+
+  <main>
+    {% block content %}{% endblock %}
+  </main>
+
+  <footer>
+    <p>&copy; <a href="https://b4m.co.jp/" target="_blank" rel="noopener">Bicycle for Mind LLC</a></p>
+  </footer>
+
+  {% block scripts %}{% endblock %}
+</body>
+</html>

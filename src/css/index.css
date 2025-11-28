@@ -1,27 +1,33 @@
 /**
- * the-wheels-css
+ * CSS Layers - レイヤー順序定義
  * 
- * 合同会社知的・自転車 CSSスタンダードテンプレート
+ * このファイルでレイヤーの優先順位を定義します。
+ * 後に定義されたレイヤーほど優先度が高くなります。
+ * 
+ * 変更する場合はここを編集してください。
  */
 
-/* レイヤー順序定義 */
-@import './layers.css';
+ @layer twls-reset, twls-typography, twls-layout, twls-components, twls-utilities;
 
-/* Reset CSS (npm: reset-css) */
-@import 'reset-css' layer(reset);
+@import 'reset-css' layer(twls-reset);
+@import 'typography/_main' layer(twls-typography);
 
-/* Design Tokens */
-@import './tokens/_index.css';
+:root {
+  --twls-main-text-color: #434343;
+  --twls-main-text-strong: #000000;
+}
 
-/* Base Styles */
-@import './base/_index.css';
+html, body {
+  font-size: 62.5%;
+  color: var(--twls-main-text-color);
+}
 
-/* Layout */
-@import './layout/_index.css';
+body {
+  font-size: 1.6rem;
+  font-weight: 400;
+  line-height: 1.7;
+}
 
-/* Components */
-@import './components/_index.css';
-
-/* Utilities */
-@import './utilities/_index.css';
-
+* {
+  box-sizing: border-box;
+}
