@@ -11,6 +11,7 @@
 
 @import 'reset-css' layer(twls-reset);
 @import 'typography/_main' layer(twls-typography);
+@import 'layout/_main' layer(twls-layout);
 
 :root {
   --twls-main-text-color: #434343;
