@@ -3,60 +3,14 @@
 {% block title %}Home - the-wheels-css{% endblock %}
 
 {% block content %}
-<section class="py-8">
-  <h1 class="text-4xl mb-4">the-wheels-css</h1>
-  <p class="text-lg text-muted mb-6">
-    合同会社知的・自転車が開発に使用するCSSスタンダードテンプレートです。
-  </p>
+<p>ここは、開発用のサンプルページです。</p>
 
-  <div class="flex gap-4 mb-8">
-    <a href="/components/buttons.html" class="btn btn-primary">Buttons</a>
-    <a href="/components/forms.html" class="btn btn-secondary">Forms</a>
-    <a href="/components/cards.html" class="btn btn-outline">Cards</a>
-  </div>
-</section>
-
-<section class="py-8">
-  <h2 class="text-2xl mb-4">Features</h2>
-  <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
-    <div class="card card-flat">
-      <div class="card-body">
-        <h3 class="card-title">@layer</h3>
-        <p class="card-text text-muted mt-2">
-          CSS Cascade Layersを使用して、スタイルの優先順位を管理します。
-        </p>
-      </div>
-    </div>
-    <div class="card card-flat">
-      <div class="card-body">
-        <h3 class="card-title">CSS Variables</h3>
-        <p class="card-text text-muted mt-2">
-          デザイントークンとしてCSS変数を活用し、一貫性のあるスタイルを実現します。
-        </p>
-      </div>
-    </div>
-    <div class="card card-flat">
-      <div class="card-body">
-        <h3 class="card-title">Modern CSS</h3>
-        <p class="card-text text-muted mt-2">
-          最新のCSS機能を積極的に採用し、シンプルで保守性の高いコードを目指します。
-        </p>
-      </div>
-    </div>
-  </div>
-</section>
-
-<section class="py-8">
-  <h2 class="text-2xl mb-4">Layer Structure</h2>
-  <pre><code>@layer reset, tokens, base, layout, components, utilities;</code></pre>
-  <ul class="mt-4">
-    <li><strong>reset</strong> - ブラウザリセット (reset-css)</li>
-    <li><strong>tokens</strong> - CSS変数（カラー、スペース、フォント等）</li>
-    <li><strong>base</strong> - 基本的なHTML要素のスタイル</li>
-    <li><strong>layout</strong> - コンテナ、グリッドなど</li>
-    <li><strong>components</strong> - ボタン、フォーム、カードなど</li>
-    <li><strong>utilities</strong> - ヘルパークラス</li>
+<nav>
+  <ul>
+    <li><a href="/typography/">Typography</a></li>
+    <li><a href="/buttons/">Buttons</a></li>    
+    <li>...etc</li>
   </ul>
-</section>
+</nav>
 {% endblock %}
 
