@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>{% block title %}the-wheels-css{% endblock %}</title>
+  <link rel="stylesheet" href="/src/css/index.css">
+  {% block head %}{% endblock %}
+</head>
+<body>
+  <header class="container py-4">
+    <nav class="flex items-center justify-between">
+      <a href="/" class="text-xl font-bold no-underline" style="color: var(--color-text);">the-wheels-css</a>
+      <ul class="flex gap-4" style="list-style: none; padding: 0; margin: 0;">
+        <li><a href="/">Home</a></li>
+        <li><a href="/components/buttons.html">Buttons</a></li>
+        <li><a href="/components/forms.html">Forms</a></li>
+        <li><a href="/components/cards.html">Cards</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main class="container py-6">
+    {% block content %}{% endblock %}
+  </main>
+
+  <footer class="container py-8 text-center text-muted">
+    <p>&copy; 合同会社知的・自転車</p>
+  </footer>
+
+  {% block scripts %}{% endblock %}
+</body>
+</html>
+

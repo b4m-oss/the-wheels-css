@@ -1,0 +1,131 @@
+{% extends "layouts/base.njk" %}
+
+{% block title %}Forms - the-wheels-css{% endblock %}
+
+{% block content %}
+<h1 class="text-3xl mb-6">Forms</h1>
+
+<section class="mb-8">
+  <h2 class="text-xl mb-4">Text Input</h2>
+  <div class="form-group" style="max-width: 400px;">
+    <label class="form-label" for="input1">Label</label>
+    <input type="text" class="form-input" id="input1" placeholder="Placeholder text">
+    <span class="form-helper">Helper text for the input field.</span>
+  </div>
+</section>
+
+<section class="mb-8">
+  <h2 class="text-xl mb-4">Input States</h2>
+  <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+    <div class="form-group">
+      <label class="form-label" for="input-normal">Normal</label>
+      <input type="text" class="form-input" id="input-normal" value="Normal input">
+    </div>
+    <div class="form-group">
+      <label class="form-label" for="input-disabled">Disabled</label>
+      <input type="text" class="form-input" id="input-disabled" value="Disabled input" disabled>
+    </div>
+    <div class="form-group form-error">
+      <label class="form-label" for="input-error">Error</label>
+      <input type="text" class="form-input" id="input-error" value="Error input">
+      <span class="form-error-message">This field has an error.</span>
+    </div>
+  </div>
+</section>
+
+<section class="mb-8">
+  <h2 class="text-xl mb-4">Textarea</h2>
+  <div class="form-group" style="max-width: 400px;">
+    <label class="form-label" for="textarea1">Message</label>
+    <textarea class="form-textarea" id="textarea1" placeholder="Enter your message..."></textarea>
+  </div>
+</section>
+
+<section class="mb-8">
+  <h2 class="text-xl mb-4">Select</h2>
+  <div class="form-group" style="max-width: 400px;">
+    <label class="form-label" for="select1">Select an option</label>
+    <select class="form-select" id="select1">
+      <option value="">Choose...</option>
+      <option value="1">Option 1</option>
+      <option value="2">Option 2</option>
+      <option value="3">Option 3</option>
+    </select>
+  </div>
+</section>
+
+<section class="mb-8">
+  <h2 class="text-xl mb-4">Checkbox & Radio</h2>
+  <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+    <div>
+      <p class="form-label mb-2">Checkboxes</p>
+      <div class="flex flex-col gap-2">
+        <label class="form-check">
+          <input type="checkbox" class="form-check-input" checked>
+          <span class="form-check-label">Option 1</span>
+        </label>
+        <label class="form-check">
+          <input type="checkbox" class="form-check-input">
+          <span class="form-check-label">Option 2</span>
+        </label>
+        <label class="form-check">
+          <input type="checkbox" class="form-check-input">
+          <span class="form-check-label">Option 3</span>
+        </label>
+      </div>
+    </div>
+    <div>
+      <p class="form-label mb-2">Radio buttons</p>
+      <div class="flex flex-col gap-2">
+        <label class="form-check">
+          <input type="radio" class="form-check-input" name="radio-group" checked>
+          <span class="form-check-label">Option A</span>
+        </label>
+        <label class="form-check">
+          <input type="radio" class="form-check-input" name="radio-group">
+          <span class="form-check-label">Option B</span>
+        </label>
+        <label class="form-check">
+          <input type="radio" class="form-check-input" name="radio-group">
+          <span class="form-check-label">Option C</span>
+        </label>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="mb-8">
+  <h2 class="text-xl mb-4">Complete Form Example</h2>
+  <form style="max-width: 500px;">
+    <div class="form-group mb-4">
+      <label class="form-label" for="name">Name</label>
+      <input type="text" class="form-input" id="name" placeholder="Your name">
+    </div>
+    <div class="form-group mb-4">
+      <label class="form-label" for="email">Email</label>
+      <input type="email" class="form-input" id="email" placeholder="your@email.com">
+    </div>
+    <div class="form-group mb-4">
+      <label class="form-label" for="subject">Subject</label>
+      <select class="form-select" id="subject">
+        <option value="">Select a subject...</option>
+        <option value="general">General Inquiry</option>
+        <option value="support">Support</option>
+        <option value="feedback">Feedback</option>
+      </select>
+    </div>
+    <div class="form-group mb-4">
+      <label class="form-label" for="message">Message</label>
+      <textarea class="form-textarea" id="message" placeholder="Your message..."></textarea>
+    </div>
+    <div class="form-group mb-4">
+      <label class="form-check">
+        <input type="checkbox" class="form-check-input">
+        <span class="form-check-label">I agree to the terms and conditions</span>
+      </label>
+    </div>
+    <button type="submit" class="btn btn-primary">Submit</button>
+  </form>
+</section>
+{% endblock %}
+

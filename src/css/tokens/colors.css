@@ -1,0 +1,47 @@
+/**
+ * Color Tokens
+ */
+
+@layer tokens {
+  :root {
+    /* Primary Colors */
+    --color-primary: #2563eb;
+    --color-primary-light: #3b82f6;
+    --color-primary-dark: #1d4ed8;
+
+    /* Neutral Colors */
+    --color-black: #000000;
+    --color-white: #ffffff;
+    --color-gray-50: #f9fafb;
+    --color-gray-100: #f3f4f6;
+    --color-gray-200: #e5e7eb;
+    --color-gray-300: #d1d5db;
+    --color-gray-400: #9ca3af;
+    --color-gray-500: #6b7280;
+    --color-gray-600: #4b5563;
+    --color-gray-700: #374151;
+    --color-gray-800: #1f2937;
+    --color-gray-900: #111827;
+
+    /* Semantic Colors */
+    --color-success: #22c55e;
+    --color-warning: #f59e0b;
+    --color-error: #ef4444;
+    --color-info: #3b82f6;
+
+    /* Text Colors */
+    --color-text: var(--color-gray-900);
+    --color-text-muted: var(--color-gray-600);
+    --color-text-inverse: var(--color-white);
+
+    /* Background Colors */
+    --color-bg: var(--color-white);
+    --color-bg-muted: var(--color-gray-50);
+    --color-bg-inverse: var(--color-gray-900);
+
+    /* Border Colors */
+    --color-border: var(--color-gray-200);
+    --color-border-muted: var(--color-gray-100);
+  }
+}
+

@@ -1,0 +1,41 @@
+{
+  "name": "the-wheels-css",
+  "version": "0.1.0",
+  "description": "CSS standard template used for development by Bicycle for Mind LLC",
+  "type": "module",
+  "main": "dist/index.css",
+  "style": "dist/index.css",
+  "exports": {
+    ".": "./dist/index.css",
+    "./tokens": "./dist/tokens.css",
+    "./base": "./dist/base.css",
+    "./layout": "./dist/layout.css",
+    "./components": "./dist/components.css",
+    "./utilities": "./dist/utilities.css"
+  },
+  "files": [
+    "dist"
+  ],
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "build:css": "node scripts/build-css.js",
+    "preview": "vite preview"
+  },
+  "keywords": [
+    "css",
+    "css-framework",
+    "css-layers"
+  ],
+  "author": "Kohki SHIKATA, Bicycle for Mind LLC",
+  "license": "MIT",
+  "devDependencies": {
+    "@vituum/vite-plugin-nunjucks": "^1.1.0",
+    "vite": "^5.4.0",
+    "vituum": "^1.1.0"
+  },
+  "dependencies": {
+    "reset-css": "^5.0.2"
+  }
+}
+

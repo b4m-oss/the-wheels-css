@@ -1,0 +1,26 @@
+/**
+ * Breakpoint Tokens
+ * 
+ * Note: CSS変数はmedia queryでは使用できないため、
+ * ここではドキュメント目的でカスタムプロパティを定義し、
+ * 実際のブレークポイントは各ファイルで直接値を使用します。
+ */
+
+@layer tokens {
+  :root {
+    /* Breakpoint reference values (for documentation) */
+    /* --breakpoint-sm: 640px;   */
+    /* --breakpoint-md: 768px;   */
+    /* --breakpoint-lg: 1024px;  */
+    /* --breakpoint-xl: 1280px;  */
+    /* --breakpoint-2xl: 1536px; */
+
+    /* Container max-widths */
+    --container-sm: 640px;
+    --container-md: 768px;
+    --container-lg: 1024px;
+    --container-xl: 1280px;
+    --container-2xl: 1536px;
+  }
+}
+
